@@ -13,18 +13,12 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-left"> <!--Lado Esquerdo-->
-            <a><img src="Imagens/favicon.ico" alt="Logo" height="100" width="100"></a>
-            <h1>A ilha dos<br>Açores</h1>
-        </div>
-
-        <div class="nav-right"> <!--Lado Direito-->
-            <a href="">Novidades</a>
-            <a href="">Link2</a>
-            <a href="">Link3</a>
-        </div> 
-    </nav>
+<div class="container">    
+<div class="row clearfix">
+    <div class="col-md-12 column" id="header">
+        <?php include 'header.php';?>
+    </div>
+</div>
 
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -69,14 +63,15 @@
     </div>
 
 
+    <br><br>
 
+    <div id="footer">
+        <?php include 'footer.php';?>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script> <!--Ligar Bootsrap-->
-</script>
+    </script>
+
 </body>
-
 </html>
-
-<p>alteracoa para teste</p>
-<!---->
