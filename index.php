@@ -52,13 +52,16 @@
 
     <div class="row">
         <div class="col-md-4">
-            <p>Restaurantes</p>
+            <img src="imagens/imgRestaurante.jpg" width="300" height="300">
+            <p class="textoCaixas">Restaurantes</p>
         </div>
         <div class="col-md-4">
-            <p>Alojamentos</p>
+            <img src="imagens/imgAlojamento.jpg" width="300" height="300">
+            <p class="textoCaixas">Alojamentos </p>
         </div>
         <div class="col-md-4">
-            <p>Experiências</p>
+            <img src="imagens/imgVisitar.jpg" width="300" height="300">
+            <p class="textoCaixas">Visitar</p>
         </div>
     </div>
 

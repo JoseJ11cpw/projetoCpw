@@ -25,11 +25,24 @@
     object-fit: cover;
 }
 
-.col-md-4{
-    border: 1px solid black;
+.col-md-4{ /*texto dentro das caixas*/
     text-align: center;
-    border-radius: 10px; /*arredonda os cantos*/
     font-size: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.row img{ /*3 imagens*/
+    border-radius: 10px; /*arredonda os cantos*/
+}
+
+.textoCaixas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(192, 203, 192, 0.6);
+    padding: 10px 20px;
+    width: 69%;
 }
 
 #footer{
