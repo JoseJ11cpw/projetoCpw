@@ -12,7 +12,6 @@
 </head>
 <body>
 <div class="container-fluid">    
-<div class="row clearfix">
     <div class="col-md-12 column" id="header">
         <?php include 'header.php';?>
     </div>
@@ -55,33 +54,38 @@
         </div>
     </section>
 
-    <br><br>
+    <br><br><br>
 
     <div class="row">
-        <div class="col-md-4">
-            <div class="caixa">
-            <img src="imagens/imgRestaurante.jpg" width="300" height="300">
-            <a class="textoCaixas" href="restaurantes.php"><p>Restaurantes</p> </p></a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <img src="imagens/imgAlojamento.jpg" width="300" height="300">
-            <p class="textoCaixas">Alojamentos </p>
-        </div>
         <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="imagens/imgAlojamento.jpg" alt="Card image cap">
+            <img class="card-img-top" src="imagens/restaurante.png" alt="Card image cap">
             <div class="card-body">
                 <a class="card-text" href="restaurantes.php"><p>Restaurantes</p> </p></a>
             </div>
         </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/alojamentos.png" alt="Card image cap">
+            <div class="card-body">
+                <a class="card-text" href="restaurantes.php"><p>Alojamentos</p> </p></a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/visitar.png" alt="Card image cap">
+            <div class="card-body">
+                <a class="card-text" href="restaurantes.php"><p>Visitar</p> </p></a>
+            </div>
+        </div>
+        
     </div>
 
 
     <br><br>
 
-    <div id="footer">
+    <div class="footer">
         <?php include 'footer.php';?>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script> <!--Ligar Bootsrap-->

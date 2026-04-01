@@ -3,10 +3,6 @@
     object-fit: cover;
 }
 
-.row img{ /*3 imagens*/
-    border-radius: 10px; /*arredonda os cantos*/
-}
-
 .col-md-4{ /*texto dentro das caixas*/
     text-align: center;
     font-size: 30px;
@@ -69,4 +65,27 @@
   line-height: 1.6;
   color: #333;
   margin-bottom: 15px;
+}
+
+.card{
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  border-radius: 20px;
+}
+.card-img-top{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  height: 150px;
+  width: 150px;
+}
+
+.card-text{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+.row{
+  gap:200px;
+  justify-content: center;
 }

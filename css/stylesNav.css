@@ -22,6 +22,6 @@
     margin-right: 100px;
     align-items: center; /*centrar*/
 }
-#footer{
+.footer{
     background-color: rgb(233, 219, 219, 0.2) ;
 }
