@@ -68,9 +68,11 @@
             <img src="imagens/imgAlojamento.jpg" width="300" height="300">
             <p class="textoCaixas">Alojamentos </p>
         </div>
-        <div class="col-md-4">
-            <img src="imagens/imgVisitar.jpg" width="300" height="300">
-            <p class="textoCaixas">Visitar</p>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/imgAlojamento.jpg" alt="Card image cap">
+            <div class="card-body">
+                <a class="card-text" href="restaurantes.php"><p>Restaurantes</p> </p></a>
+            </div>
         </div>
     </div>
 

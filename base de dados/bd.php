@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$dbname = "ilha dos açores";
+$dbname = "a ilha dos açores";
 $username = "root";
 $password = "";
 
