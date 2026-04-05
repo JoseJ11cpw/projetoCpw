@@ -9,9 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!--Ligar Bootsrap-->
     <link rel="stylesheet" href="css/styles.css"> <!-- Ligar ao Css-->
+    <link rel="stylesheet" href="css/fontes.css"> <!-- Ligar ao Css onde tem as fontes-->
 </head>
 <body>
-<div class="container-fluid">    
+
+<div class="container-fluid">
     <div class="col-md-12 column" id="header">
         <?php include 'header.php';?>
     </div>
@@ -44,6 +46,7 @@
         </button>
     </div>
     <!--CARROSSEL-->
+
     <br><br><br>
     <section class="secTexto">
         <div class="Overlay">

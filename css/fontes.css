@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+.Texto{
+    font-family: 'Lato', sans-serif;
+}
+.card-text{
+    font-family: 'Rubik', sans-serif;
+}
+.nav-right a{
+    font-family: 'Rubik', sans-serif;
+}
+.nav-left h1 {
+    font-family: 'Lato', sans-serif;   
+}

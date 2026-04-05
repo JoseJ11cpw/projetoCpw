@@ -8,19 +8,18 @@
 }
 
 .nav-left h1 {
-    font-family: 'Montserrat';
     font-size: 35px;
     margin: 0;               /* remove margem padrão do h1 */
 }
 
 .nav-right a{
-    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
     text-decoration: none;
     color: black;
     font-size: 20px;
     margin-left: 100px;
     margin-right: 100px;
     align-items: center; /*centrar*/
+
 }
 .footer{
     background-color: rgb(233, 219, 219, 0.2) ;
