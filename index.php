@@ -9,10 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!--Ligar Bootsrap-->
     <link rel="stylesheet" href="css/styles.css"> <!-- Ligar ao Css-->
+    <link rel="stylesheet" href="css/fontes.css"> <!-- Ligar ao Css onde tem as fontes-->
 </head>
 <body>
-<div class="container-fluid">    
-<div class="row clearfix">
+
+<div class="container-fluid">
     <div class="col-md-12 column" id="header">
         <?php include 'header.php';?>
     </div>
@@ -45,6 +46,7 @@
         </button>
     </div>
     <!--CARROSSEL-->
+
     <br><br><br>
     <section class="secTexto">
         <div class="Overlay">
@@ -55,31 +57,38 @@
         </div>
     </section>
 
-    <br><br>
+    <br><br><br>
 
     <div class="row">
-        <div class="col-md-4">
-            <div class="caixa">
-            <img src="imagens/imgRestaurante.jpg" width="300" height="300">
-            <a class="textoCaixas" href="restaurantes.php"><p>Restaurantes</p> </p></a>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/restaurante.png" alt="Card image cap">
+            <div class="card-body">
+                <a class="card-text" href="restaurantes.php"><p>Restaurantes</p> </p></a>
             </div>
         </div>
-        <div class="col-md-4">
-            <img src="imagens/imgAlojamento.jpg" width="300" height="300">
-            <p class="textoCaixas">Alojamentos </p>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/alojamentos.png" alt="Card image cap">
+            <div class="card-body">
+                <a class="card-text" href="restaurantes.php"><p>Alojamentos</p> </p></a>
+            </div>
         </div>
-        <div class="col-md-4">
-            <img src="imagens/imgVisitar.jpg" width="300" height="300">
-            <p class="textoCaixas">Visitar</p>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/visitar.png" alt="Card image cap">
+            <div class="card-body">
+                <a class="card-text" href="restaurantes.php"><p>Visitar</p> </p></a>
+            </div>
         </div>
+        
     </div>
 
 
     <br><br>
 
-    <div id="footer">
+    <div class="footer">
         <?php include 'footer.php';?>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script> <!--Ligar Bootsrap-->
