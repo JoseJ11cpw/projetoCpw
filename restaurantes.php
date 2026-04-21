@@ -27,9 +27,10 @@ if ($result->num_rows > 0) {
   // Output data of each row
   while($row = $result->fetch_assoc()) {?>
     <div class="card custom-card" style="width: 34rem; height : 15rem; ">
-        <img class="custom-img" src="imagens/imgRestaurantes/<?php echo $row['imagem'];?>" alt="Card image cap">
-    <div class="card-body">
-        <p class="card-text"><?php echo $row['nome'];?></p>
+        <img class="custom-card-img" src="imagens/imgRestaurantes/<?php echo $row['imagem'];?>" alt="Card image cap">
+    <div class="custom-card-body">
+        <p class="custom-card-text"><?php echo $row['nome'];?></p>
+        <p><?php echo $row['localização'];?></p>
     </div>
 
 </div>

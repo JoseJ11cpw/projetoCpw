@@ -59,21 +59,21 @@
 
     <div class="row">
         
-        <a href="restaurantes.php" class="card" style="width: 18rem;">
+        <a href="restaurantes.php" class="card" style="width: 18rem; height: 20rem">
             <img class="card-img-top" src="imagens/icones/restaurante.png" alt="Card image cap">
             <div class="card-body">
                 <p class="card-text">Restaurantes</p>
             </div>
         </a>
 
-        <a href="alojamentos.php" class="card" style="width: 18rem;">
+        <a href="alojamentos.php" class="card" style="width: 18rem; height: 20rem">
             <img class="card-img-top" src="imagens/icones/alojamentos.png" alt="Card image cap">
             <div class="card-body">
                 <p class="card-text">Alojamentos</p>
             </div>
         </a>
 
-        <a href="visitar.php" class="card" style="width: 18rem;">
+        <a href="visitar.php" class="card" style="width: 18rem; height: 20rem">
             <img class="card-img-top" src="imagens/icones/visitar.png" alt="Card image cap">
             <div class="card-body">
                 <p class="card-text">Visitar</p>
