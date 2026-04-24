@@ -7,7 +7,7 @@
 
 <nav class="navbar">
     <div class="nav-left"> <!--Lado Esquerdo-->
-        <a href="index.php"><img src="Imagens/favicon.ico" alt="Logo" height="100" width="100"></a>
+        <a href="index.php"><img src="imagens/favicon.ico" alt="Logo" height="100" width="100"></a>
         <h1>A ilha dos<br>Açores</h1>
     </div>
 
