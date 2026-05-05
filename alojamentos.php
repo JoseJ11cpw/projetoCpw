@@ -17,7 +17,7 @@
 
 <div class="row">
     <?php 
-    $sql = "SELECT nome FROM alojamentos";  
+    $sql = "SELECT nome, localizacao, imagem FROM alojamentos";  
         // Execute the SQL query
         $result = $conn->query($sql);
      
@@ -26,12 +26,14 @@
 if ($result->num_rows > 0) {
   // Output data of each row
   while($row = $result->fetch_assoc()) {?>
-  <a href="#" class="card" style="width: 30rem;">
-            <img class="card-img-top" src="imagens/imgRestaurantes/<?php echo $row['imagem'];?>" alt="Card image cap">
-            <div class="card-body">
-                <p class="card-text"><?php echo $row['nome'];?> </p>
-            </div>
-    </a>
+    <div class="card custom-card item" style="width: 34rem; height : 15rem; ">
+        <img class="custom-card-img" src="imagens/imgAlojamentos/<?php echo $row['imagem'];?>" alt="Card image cap">
+    <div class="custom-card-body">
+        <h1 class="nome"><?php echo $row['nome'];?></h1>
+        <p><?php echo $row['localizacao'];?></p>
+    </div>
+
+</div>
 <?php
 }
 

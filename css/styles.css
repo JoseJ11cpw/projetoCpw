@@ -95,11 +95,18 @@
     flex-direction: column;
     justify-content: center;
 }
+.custom-card-body h1{
+  font-size:30px;
+}
 
 .custom-card-text{
   text-decoration: none;
   color: black;
   font-size: 35px;
+}
+
+.search-container{
+  align-items: center;
 }
 #pesquisa {
   width: 100%;
@@ -116,4 +123,9 @@
 #pesquisa:focus {
   border-color: #007bff;
   box-shadow: 0 0 10px rgba(0,123,255,0.3);
+}
+#filtroLocal {
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
 }

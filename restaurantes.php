@@ -15,7 +15,18 @@
 </div>
 <br><br>
 
+
+
 <input type="text" id="pesquisa" placeholder="Pesquisar...">
+<div id="resultados"></div>
+
+  <select id="filtroLocal">
+    <option value="todos">Filtrar</option>
+    <option value="São Miguel">São Miguel</option>
+    <option value="Ribeira Grande">Ribeira Grande</option>
+    <option value="Lagoa">Lagoa</option>
+  </select>
+</div>
 
 <br><br>
 
@@ -33,7 +44,7 @@ if ($result->num_rows > 0) {
     <div class="card custom-card item" style="width: 34rem; height : 15rem; ">
         <img class="custom-card-img" src="imagens/imgRestaurantes/<?php echo $row['imagem'];?>" alt="Card image cap">
     <div class="custom-card-body">
-        <p class="nome"><?php echo $row['nome'];?></p>
+        <h1 class="nome"><?php echo $row['nome'];?></h1>
         <p><?php echo $row['localizacao'];?></p>
     </div>
 
@@ -46,15 +57,14 @@ else
     {
         echo "Sem resultados";
     }
-
-
 $conn->close();
 
     ?>
+    
 
     <?php include 'footer.php';?>
 </div>
 
-<script src="js/pesquisa.js"></script>
+<script src="js/pesquisa.php"></script>
 </body>
 </html>
