@@ -14,41 +14,86 @@
         <?php include 'header.php';?>
     </div>
 </div>
+<br><br>
 
-<div class="row">
-    <?php 
-    $sql = "SELECT nome, localizacao, imagem FROM alojamentos";  
-        // Execute the SQL query
-        $result = $conn->query($sql);
-     
+<form method="GET" action="" class="search-form">
 
-// Process the result set
-if ($result->num_rows > 0) {
-  // Output data of each row
-  while($row = $result->fetch_assoc()) {?>
-    <div class="card custom-card item" style="width: 34rem; height : 15rem; ">
-        <img class="custom-card-img" src="imagens/imgAlojamentos/<?php echo $row['imagem'];?>" alt="Card image cap">
-    <div class="custom-card-body">
-        <h1 class="nome"><?php echo $row['nome'];?></h1>
-        <p><?php echo $row['localizacao'];?></p>
+    <div class="search-box">
+        <input type="text" id="searchInput" name="pesquisa"
+               placeholder="Pesquisar restaurante..."
+               value="<?php echo $_GET['pesquisa'] ?? ''; ?>">
+
+        <span id="clearSearch" class="clear-btn">✖</span>
     </div>
 
-</div>
-<?php
-}
+    <button type="submit">Pesquisar</button>
+</form>
 
-}
-else
-    {
-        echo "Sem resultados";
+<div class="row">
+
+<?php
+
+$pesquisa = $_GET['pesquisa'] ?? '';
+
+if (!empty($pesquisa)) {
+
+    $sql = "SELECT nome, localizacao, imagem 
+            FROM alojamentos 
+            WHERE nome LIKE ?";
+
+    $stmt = $conn->prepare($sql);
+
+    if (!$stmt) {
+        die("Erro no prepare: " . $conn->error);
     }
 
+    $param = "%$pesquisa%";
+    $stmt->bind_param("s", $param);
+
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+} else {
+
+    $sql = "SELECT nome, localizacao, imagem FROM alojamentos";
+    $result = $conn->query($sql);
+}
+
+/* =========================
+   MOSTRAR CARDS
+========================= */
+
+if ($result && $result->num_rows > 0) {
+
+    while ($row = $result->fetch_assoc()) {
+        ?>
+
+        <div class="card custom-card item" style="width: 34rem; height: 15rem;">
+            <img class="custom-card-img"
+                 src="imagens/imgAlojamentos/<?php echo $row['imagem']; ?>"
+                 alt="Card image">
+
+            <div class="custom-card-body">
+                <h1 class="nome"><?php echo $row['nome']; ?></h1>
+                <p><?php echo $row['localizacao']; ?></p>
+            </div>
+        </div>
+
+        <?php
+    }
+
+} else {
+    echo "Sem resultados";
+}
 
 $conn->close();
 
-    ?>
+?>
 
-    <?php include 'footer.php';?>
+<?php include 'footer.php'; ?>
+
 </div>
+<script src="js/pesquisa.js"></script>
+
 </body>
 </html>

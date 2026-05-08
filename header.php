@@ -12,7 +12,7 @@
     </div>
 
     <div class="nav-right"> <!--Lado Direito-->
-        <a href="">Novidades</a>
+        <a href="">Gastronomia</a>
         <a href="">Link2</a>
         <a href="">Link3</a>
     </div> 
